@@ -8,10 +8,11 @@ import random
 with open('report.txt', mode='rb') as f:
     info = pickle.load(f)
 
-TOKEN = '7437356260:AAGtVvrUvfzcPulqSoxrgkwFTknB9dwWvHw'
+TOKEN = 'Ваш токен'
 
 url = f'https://api.telegram.org/bot{TOKEN}/getMe'
 
+# Иногда прокси надо менять, чтобы код работал
 proxy ={
      'http': 'http//:8.222.249.190:80'
 }
